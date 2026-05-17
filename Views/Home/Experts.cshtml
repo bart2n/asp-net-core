@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Our Experts";
+    var experts = new List<string>
+    {
+        "Dr. Alice Johnson",
+        "Dr. Bob Williams",
+        "Dr. Carol Davis",
+        "Dr. David Martinez",
+        "Dr. Emily Chen",
+        "Dr. Frank Brown"
+    };
+}
+
+
+<div class="row g-4">
+    @for (int i = 0; i < 6; i++)
+    {
+        <partial name="_ExpertCard" />
+    }
+</div>
